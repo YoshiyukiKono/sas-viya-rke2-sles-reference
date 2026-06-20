@@ -1,0 +1,4 @@
+hostname,ip,role
+jump-host,10.0.0.189,jump
+nfs,10.0.0.190,nfs
+rke2-control-plane,10.0.0.191,rke2-control-plane
