@@ -2,7 +2,7 @@
 
 The compact architecture is not a feature-reduced SAS Viya topology.
 
-It keeps the full role separation while using:
+It keeps full role separation while using:
 
 - one RKE2 control plane
 - one NFS server
