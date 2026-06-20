@@ -1,3 +1,14 @@
 #cloud-config
 users:
   - name: suse
+    gecos: SUSE Admin User
+    groups: users
+    sudo: ALL=(ALL) ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - <YOUR_SSH_PUBLIC_KEY>
+
+ssh_pwauth: true
+disable_root: true
+package_update: false
+package_upgrade: false

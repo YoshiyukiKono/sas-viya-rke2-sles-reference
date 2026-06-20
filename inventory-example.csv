@@ -2,3 +2,9 @@ hostname,ip,role
 jump-host,10.0.0.189,jump
 nfs,10.0.0.190,nfs
 rke2-control-plane,10.0.0.191,rke2-control-plane
+viya-control,10.0.0.192,viya-control
+viya-compute,10.0.0.193,viya-compute
+viya-default,10.0.0.195,viya-default
+viya-cas,10.0.0.196,viya-cas
+viya-stateful,10.0.0.197,viya-stateful
+viya-stateless,10.0.0.198,viya-stateless
