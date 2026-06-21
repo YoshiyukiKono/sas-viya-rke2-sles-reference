@@ -17,7 +17,7 @@ echo
 
 echo "== SSH / OS checks =="
 read_inventory "$INVENTORY" | while IFS=',' read -r hostname ip role; do
-  [[ "$role" == "jump" || "$role" == "nfs" ]] && continue
+  [[ "$role" == "jump" || "$role" == "nfs"  || "$role" == "rancher" ]] && continue
 
   echo "==> $hostname ($ip) [$role]"
   run_ssh "$ip" "
