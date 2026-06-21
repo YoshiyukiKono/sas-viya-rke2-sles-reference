@@ -24,7 +24,7 @@ echo "Mount path    : $NFS_MOUNT_PATH"
 echo
 
 read_inventory "$INVENTORY" | while IFS=',' read -r hostname ip role; do
-  [[ "$role" == "nfs" || "$role" == "jump" ]] && continue
+  [[ "$role" == "nfs" || "$role" == "jump" || "$role" == "rancher" ]] && continue
 
   echo "==> Configuring NFS client: $hostname ($ip) [$role]"
 
