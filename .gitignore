@@ -1,0 +1,19 @@
+# Logs
+*.log
+
+# Reports
+*.csv
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+
+# Python
+__pycache__/
+*.pyc

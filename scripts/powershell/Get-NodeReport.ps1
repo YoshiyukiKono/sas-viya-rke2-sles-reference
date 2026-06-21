@@ -134,15 +134,7 @@ echo memory_total_mb=$(awk '/MemTotal/ {printf "%.0f", $2/1024}' /proc/meminfo 2
 echo root_fs=$(df -h / 2>/dev/null | awk 'NR==2 {print $2}' || echo unknown)
 echo root_fs_used=$(df -h / 2>/dev/null | awk 'NR==2 {print $5}' || echo unknown)
 echo uptime=$(uptime -p 2>/dev/null | sed 's/^up //' || echo unknown)
-if command -v rpm >/dev/null 2>&1; then
-  if rpm -q qemu-guest-agent >/dev/null 2>&1; then
-    echo qemu_guest_agent=installed
-  else
-    echo qemu_guest_agent=not-installed
-  fi
-else
-  echo qemu_guest_agent=unknown
-fi
+echo qemu_guest_agent=unknown
 '@
 
 $results = New-Object System.Collections.Generic.List[object]
